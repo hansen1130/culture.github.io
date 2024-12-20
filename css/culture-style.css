@@ -1308,10 +1308,6 @@ body {
         padding-top: 110px;
     }
 
-    .culture-popup-buttons {
-        flex-direction: column;
-    }
-
     .culture-popup1-content {
         gap: 20px;
     }
@@ -1345,6 +1341,10 @@ body {
     .culture-img-no img,
     .culture-img-no1 img {
         max-width: 300px;
+    }
+
+    .culture-popup-buttons {
+        flex-direction: column;
     }
 }
 

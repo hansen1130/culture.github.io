@@ -1611,11 +1611,9 @@ body {
     }
 }
 
-@media (max-height: 680px) {
+@media (max-height: 750px) {
     .culture-popup-buttons {
-        margin-top: 10px;
         flex-direction: column;
-        gap: 10px;
     }
 
 }

@@ -1579,3 +1579,25 @@ body {
         height: 320px;
     }
 }
+
+@media (max-height: 768px) {
+    .culture-popup1-content {
+        width: 90%;
+        max-width: 1100px;
+        height: 90%;
+    }
+
+    .culture-popup-buttons {
+        flex-direction: row;
+    }
+
+    .culture-popup1-content {
+        gap: 40px;
+    }
+}
+
+@media (max-height: 625px) {
+    .culture-popup1-content {
+        height: 100%;
+    }
+}

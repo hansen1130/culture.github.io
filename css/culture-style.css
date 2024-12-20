@@ -1601,6 +1601,7 @@ body {
     }
 
     .culture-popup-buttons {
+        flex-direction: column;
         margin-top: 10px;
         flex-direction: row;
         gap: 10px;

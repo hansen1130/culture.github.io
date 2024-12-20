@@ -1573,6 +1573,9 @@ body {
     .culture-popup1-text h3 {
         font-size: 1.3rem;
     }
+    .hover-overlay {
+    display: none;
+}
 }
 
 @media (max-width: 330px) {

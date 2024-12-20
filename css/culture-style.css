@@ -1573,19 +1573,7 @@ body {
         font-size: 1.3rem;
     }
 
-    .hover-overlay,
-    .culture-stickers:hover img,
-    .carousel-item:hover .hover-overlay,
-    .nav-btn:hover,
-    .orange-btn:hover,
-    .fb-btn:hover,
-    .culture-popup1-close:hover,
-    .scrollable-content::-webkit-scrollbar-thumb:hover,
-    .culture-page3-travel-card:hover,
-    .culture-page3-travel-card:hover,
-    .culture-footer-row img:hover,
-    .back-to-top:hover,
-    .culture-popup-nav-btn:hover {
+    .hover-overlay {
         display: none;
     }
 }

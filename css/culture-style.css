@@ -944,6 +944,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     transition: background-image 0.3s ease-in-out;
+    z-index: 999;
 }
 
 .culture-popup1-close:hover {

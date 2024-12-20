@@ -1594,13 +1594,32 @@ body {
     }
 }
 
-@media (max-width:391px) {
+@media (max-width:460px) {
     .culture-labe-img {
         display: none;
     }
 
     .carousel-item h3 {
         font-size: 1.6rem;
+    }
+
+    .culture-icon2 {
+        gap: 0;
+    }
+
+    .culture-icon1 {
+        margin-left: 10px;
+    }
+
+    .culture-icon img,
+    .culture-icon1 img {
+        margin-right: 0rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .culture-icon1 {
+        margin-left: 5px;
     }
 }
 

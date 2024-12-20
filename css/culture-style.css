@@ -1219,6 +1219,11 @@ body {
     color: #FFFFFF;
 }
 
+.culture-popup-phone a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (min-width: 2080px) {
     .culture-event {
         width: 60%;

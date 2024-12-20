@@ -1601,7 +1601,6 @@ body {
     }
 
     .culture-popup-buttons {
-        flex-direction: column;
         margin-top: 10px;
         flex-direction: row;
         gap: 10px;
@@ -1612,6 +1611,14 @@ body {
     }
 }
 
+@media (max-height: 680px) {
+    .culture-popup-buttons {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
 @media (max-height: 625px) {
     .culture-popup1-image>img {
         max-width: 370px;

@@ -212,3 +212,13 @@ backToTopButton.addEventListener("click", function() {
         behavior: "smooth",
     });
 });
+
+if (window.matchMedia('(hover: none)').matches) {
+    // 針對觸控裝置進行 hover 效果禁用
+    document.querySelectorAll('.button').forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('active');
+        });
+    });
+}
+

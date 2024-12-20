@@ -227,7 +227,7 @@ body {
     color: #FF7400;
     font-weight: 900;
     letter-spacing: .2em;
-
+    margin-left: auto;
 }
 
 .culture-container-img {
@@ -613,13 +613,24 @@ body {
     transition: transform 0.3s ease-in-out;
     will-change: transform;
     gap: 20px;
+    box-sizing: border-box;
 }
 
 .carousel-item {
-    min-width: 25%;
-    padding: 20px;
+    flex: 0 0 calc(25% - 20px);
     background: #fff;
+    padding: 20px;
     cursor: pointer;
+    box-sizing: border-box;
+}
+
+.carousel-item:last-child {
+    margin-right: 0;
+}
+
+.carousel-item1>img {
+    width: 100%;
+    height: auto;
 }
 
 .carousel-item1 {
@@ -631,12 +642,6 @@ body {
     text-align: left;
     margin: 10px 0;
 }
-
-.carousel-item1 img {
-    width: 100%;
-    max-height: 265px;
-}
-
 
 .hover-overlay {
     position: absolute;
@@ -849,7 +854,7 @@ body {
 .image-info {
     position: absolute;
     top: 30px;
-    left: -30px;
+    right: -30px;
     background: #fff;
     border-left: 4px solid #ff6600;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -931,27 +936,22 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 2rem;
-    font-weight: 100;
-    color: #FF7400;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    border: 1px #FF7400 solid;
-    background-color: #fff;
-    border-radius: 99em;
     width: 40px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s ease
+    cursor: pointer;
+    background-image: url('../img/culture-icon-close.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
 }
 
 .culture-popup1-close:hover {
-    color: #fff;
-    border: 1px #fff solid;
-    background-color: #FF7400;
+    background-image: url('../img/culture-icon-close-hover.svg');
+    /* Switch to the hover image */
 }
+
+
 
 .scrollable-content {
     width: 100%;
@@ -961,6 +961,7 @@ body {
     text-align: left;
     padding-left: 30px;
     margin-left: -10px;
+    padding-right: 20px;
 }
 
 .scrollable-content::-webkit-scrollbar {
@@ -1146,13 +1147,9 @@ body {
 .culture-footer-row {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(231px, 1fr));
-    /* 自動填充圖片，每個最小 120px */
     gap: 20px;
-    /* 圖片間的間距 */
     max-width: 1320px;
-    /* 限制整個區域的寬度 */
     margin: 0 auto;
-    /* 讓整個 footer 居中 */
     justify-items: center;
 }
 
@@ -1252,6 +1249,10 @@ body {
         font-size: 6rem;
     }
 
+    .culture-container-title1 {
+        transform: translateY(-10px);
+    }
+
     .culture-line,
     .culture-line1 {
         width: 150px;
@@ -1320,7 +1321,13 @@ body {
     }
 
     .carousel-item {
-        min-width: 33.33%;
+        flex: 0 0 calc(33.35% - 20px);
+    }
+
+    .culture-container-title1 p {
+        width: 100%;
+        max-width: 310px;
+        text-align: right;
     }
 
 }
@@ -1521,6 +1528,12 @@ body {
         font-size: 1.5rem;
     }
 
+    .culture-container-title1 p {
+        width: 90%;
+        max-width: 530px;
+        text-align: left;
+    }
+
     .culture-page3-travel-title {
         font-size: 1.5rem;
         letter-spacing: 1px;
@@ -1588,7 +1601,9 @@ body {
     }
 
     .culture-popup-buttons {
+        margin-top: 10px;
         flex-direction: row;
+        gap: 10px;
     }
 
     .culture-popup1-content {
@@ -1597,7 +1612,7 @@ body {
 }
 
 @media (max-height: 625px) {
-    .culture-popup1-content {
-        height: 100%;
+    .culture-popup1-image>img {
+        max-width: 370px;
     }
 }

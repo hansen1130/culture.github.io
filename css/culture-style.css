@@ -842,14 +842,10 @@ body {
 }
 
 .image-info {
-    position: absolute;
-    top: 30px;
-    right: -30px;
     background: #fff;
-    border-left: 4px solid #ff6600;
+    border-bottom: 4px solid #ff6600;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: #5D4F3F;
-    font-size: 1.2rem;
     text-align: left;
     padding: 10px 50px 10px 20px;
     font-weight: 500;
@@ -1511,6 +1507,7 @@ body {
 }
 
 @media (max-width: 530px) {
+
     .culture-label-bg4,
     .culture-label-line,
     .culture-label-bg {
@@ -1579,15 +1576,7 @@ body {
     }
 
     .image-info {
-        background: rgba(255, 255, 255, 0.8);
-    }
-
-    .image-info {
-        top: 35px;
-        right: 0px;
-        left: -20px;
         padding: 10px 10px 10px 20px;
-        background: rgba(255, 255, 255, 0.8);
     }
 
     .culture-page3-travel-card {

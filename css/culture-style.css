@@ -948,10 +948,7 @@ body {
 
 .culture-popup1-close:hover {
     background-image: url('../img/culture-icon-close-hover.svg');
-    /* Switch to the hover image */
 }
-
-
 
 .scrollable-content {
     width: 100%;
@@ -1574,9 +1571,22 @@ body {
     .culture-popup1-text h3 {
         font-size: 1.3rem;
     }
-    .hover-overlay {
-    display: none;
-}
+
+    .hover-overlay,
+    .culture-stickers:hover img,
+    .carousel-item:hover .hover-overlay,
+    .nav-btn:hover,
+    .orange-btn:hover,
+    .fb-btn:hover,
+    .culture-popup1-close:hover,
+    .scrollable-content::-webkit-scrollbar-thumb:hover,
+    .culture-page3-travel-card:hover,
+    .culture-page3-travel-card:hover,
+    .culture-footer-row img:hover,
+    .back-to-top:hover,
+    .culture-popup-nav-btn:hover {
+        display: none;
+    }
 }
 
 @media (max-width: 330px) {
@@ -1621,6 +1631,7 @@ body {
     }
 
 }
+
 @media (max-height: 625px) {
     .culture-popup1-image>img {
         max-width: 370px;

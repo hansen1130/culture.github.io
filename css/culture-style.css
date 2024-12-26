@@ -59,7 +59,6 @@ body {
 }
 
 .culture-event {
-
     width: 100%;
 }
 
@@ -94,7 +93,6 @@ body {
     width: 250px;
     height: 6px;
     background-color: #FF7400;
-
 }
 
 .culture-container-title {
@@ -117,14 +115,10 @@ body {
     left: 0;
     z-index: -1;
     color: transparent;
-    text-shadow:
-        0 0 10px #FFFBF3,
-        0 0 10px #FFFBF3,
-        0 0 10px #FFFBF3;
+    text-shadow: 0 0 10px #FFFBF3, 0 0 10px #FFFBF3, 0 0 10px #FFFBF3;
     -webkit-text-stroke: 10px #FFFBF3;
     font-weight: 900;
 }
-
 
 .culture-container-title h1 span {
     color: #5D4F3F;
@@ -143,10 +137,7 @@ body {
     transform: translateY(-50%);
     z-index: -1;
     color: transparent;
-    text-shadow:
-        0 0 10px #FFFBF3,
-        0 0 10px #FFFBF3,
-        0 0 10px #FFFBF3;
+    text-shadow: 0 0 10px #FFFBF3, 0 0 10px #FFFBF3, 0 0 10px #FFFBF3;
     -webkit-text-stroke: 10px #FFFBF3;
     font-weight: 900;
     font-size: inherit;
@@ -159,7 +150,6 @@ body {
     font-weight: 900;
     margin-left: 5rem;
     letter-spacing: .2em;
-
 }
 
 .culture-container-title1 {
@@ -186,14 +176,10 @@ body {
     left: 0;
     z-index: -1;
     color: transparent;
-    text-shadow:
-        0 0 10px #FFEDBD,
-        0 0 10px #FFEDBD,
-        0 0 10px #FFEDBD;
+    text-shadow: 0 0 10px #FFEDBD, 0 0 10px #FFEDBD, 0 0 10px #FFEDBD;
     -webkit-text-stroke: 10px #FFEDBD;
     font-weight: 900;
 }
-
 
 .culture-container-title1 h1 span {
     color: #5D4F3F;
@@ -212,10 +198,7 @@ body {
     transform: translateY(-50%);
     z-index: -1;
     color: transparent;
-    text-shadow:
-        0 0 10px #FFEDBD,
-        0 0 10px #FFEDBD,
-        0 0 10px #FFEDBD;
+    text-shadow: 0 0 10px #FFEDBD, 0 0 10px #FFEDBD, 0 0 10px #FFEDBD;
     -webkit-text-stroke: 10px #FFEDBD;
     font-weight: 900;
     font-size: inherit;
@@ -577,7 +560,6 @@ body {
     display: flex;
 }
 
-
 .carousel-container1 {
     width: 100%;
     background-color: #FFEDBD;
@@ -757,14 +739,14 @@ body {
 .culture-popup1-content {
     width: 90%;
     max-width: 1440px;
-    height: 90%;
+    height: 95%;
     display: flex;
     justify-content: center;
     background: rgba(255, 255, 255, 0.9);
     border: #ff6600 1px solid;
     position: relative;
     padding: 50px;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .culture-popup1-text {
@@ -829,14 +811,13 @@ body {
 }
 
 .culture-popup1-image {
-    width: 45%;
-    position: relative;
     text-align: center;
+    margin-right: 20px;
+
 }
 
 .culture-popup1-image>img {
     width: 100%;
-    max-width: 650px;
     border: 10px #fff solid;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -863,12 +844,12 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .btn {
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 20px;
     border-radius: 99em;
     color: #fff;
     text-decoration: none;
@@ -918,7 +899,6 @@ body {
     margin-right: 10px;
 }
 
-
 .culture-popup1-close {
     position: absolute;
     top: 10px;
@@ -939,8 +919,7 @@ body {
 }
 
 .scrollable-content {
-    width: 100%;
-    max-width: 650px;
+    width: 85%;
     max-height: 600px;
     overflow-y: auto;
     text-align: left;
@@ -980,7 +959,6 @@ body {
     position: relative;
     width: 460px;
     height: 600px;
-
 }
 
 .culture-page3-travel-bg {
@@ -1058,7 +1036,6 @@ body {
     font-weight: 400;
     clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
     padding: 5px 10px 5px 20px;
-
 }
 
 .culture-page3-travel-button {
@@ -1126,7 +1103,6 @@ body {
 .culture-footer-hosts img {
     width: 100%;
     max-width: 388px;
-
 }
 
 .culture-footer-row {
@@ -1230,7 +1206,6 @@ body {
         min-width: 1920px;
         margin: auto;
     }
-
 }
 
 @media (max-width:1510px) {
@@ -1306,10 +1281,6 @@ body {
         gap: 20px;
     }
 
-    .scrollable-content {
-        width: 50%;
-    }
-
     .carousel-item {
         flex: 0 0 calc(33.35% - 20px);
     }
@@ -1332,6 +1303,14 @@ body {
         font-size: 1.3rem;
     }
 
+    .culture-popup1-image {
+        width: 60%;
+    }
+
+    .culture-popup-buttons {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1351,7 +1330,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
     .culture-container {
         flex-direction: column;
         align-items: center;
@@ -1508,6 +1486,10 @@ body {
 @media (max-width: 650px) {
     .card-6 {
         display: none;
+    }
+
+    .culture-popup-buttons {
+        gap: 20px;
     }
 }
 

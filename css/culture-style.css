@@ -740,6 +740,7 @@ body {
     width: 90%;
     max-width: 1440px;
     height: 95%;
+    max-height: 1080px;
     display: flex;
     justify-content: center;
     background: rgba(255, 255, 255, 0.9);
@@ -919,7 +920,6 @@ body {
 
 .scrollable-content {
     width: 50%;
-    max-height: 600px;
     overflow-y: auto;
     text-align: left;
     padding-left: 30px;
